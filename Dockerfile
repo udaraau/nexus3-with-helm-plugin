@@ -18,4 +18,7 @@ RUN curl --fail --silent --location --retry 3 \
  https://raw.githubusercontent.com/udaraau/nexus3-with-helm-plugin/master/nexus-oss-feature-3.20.1-feature.xml \
  && cp -r /tmp/nexus-oss-feature-3.20.1-feature.xml \
     /opt/sonatype/nexus/system/com/sonatype/nexus/assemblies/nexus-oss-feature/3.20.1-01/nexus-oss-feature-3.20.1-01-features.xml
+
+#RUN  echo $(cat /tmp/nexus-oss-feature-3.20.1-feature.xml)
+
 USER nexus 
