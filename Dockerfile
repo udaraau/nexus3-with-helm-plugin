@@ -13,4 +13,9 @@ RUN curl --fail --silent --location --retry 3 \
     -type f -exec chmod 644 {} \; \
   && rm /tmp/nexus-repository-helm-1.0.2.jar
 
-USER nexus
+RUN curl --fail --silent --location --retry 3 \
+ -o /tmp/nexus-oss-feature-3.20.1-feature.xml \
+ https://github.com/udaraau/nexus3-with-helm-plugin/blob/master/nexus-oss-feature-3.20.1-feature.xml \
+ && cp -r /tmp/nexus-oss-feature-3.20.1-feature.xml \
+    /opt/sonatype/nexus/system/com/sonatype/nexus/assemblies/nexus-oss-feature/3.20.1-01/nexus-oss-feature-3.20.1-01-features.xml
+USER nexus 

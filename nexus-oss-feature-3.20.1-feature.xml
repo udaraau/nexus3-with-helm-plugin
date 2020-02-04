@@ -21,6 +21,7 @@
         <feature version="3.20.1.01">nexus-restore-yum</feature>
         <feature version="1.1.1">nexus-restore-r</feature>
         <feature version="3.20.1.01">nexus-restore-rubygems</feature>
+        <feature version="1.0.2" prerequisite="false" dependency="false">nexus-repository-helm</feature>
         <feature version="3.20.1.01">nexus-rutauth-plugin</feature>
         <feature>nexus-script-plugin</feature>
         <feature version="3.20.1.01">nexus-ahc-plugin</feature>
