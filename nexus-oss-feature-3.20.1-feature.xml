@@ -182,6 +182,6 @@
     </feature>
     <feature name="nexus-repository-helm" description="org.sonatype.nexus.plugins:nexus-repository-helm" version="3.20.1.01">
         <details>org.sonatype.nexus.plugins:nexus-repository-helm</details>
-        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-helm/3.20.1-01</bundle>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-helm/1.0.2</bundle>
     </feature>
  </features>
